@@ -190,6 +190,7 @@ export const default_renderer = (basePath) => {
       heading(text, level) {
         const slugurl = slug(text);
         toc.add(_toc, level, text, slugurl);
+        //TODO: add rel attribute for SEO "ugc", "nofollow" "sponsored"
         return `<h${level} id="${slugurl}"><a href="#${slugurl}">${text}</a></h${level}>\n`;
       },
 
@@ -276,7 +277,7 @@ export const default_renderer = (basePath) => {
         // Does not detect if the link has the same domain as the host site
         // Treat all full URLs as external link
         const isLinkExternal = href.indexOf('://') > 0 || href.indexOf('//') === 0;
-        return `<a href="${escape(href)}" ${isLinkExternal ? `rel="external"` : ''} ${
+        return `<a href="${escape(href)}" ${isLinkExternal ? `rel="nofollow"` : ''} ${
           title ? `title="${title}"` : ''
         }>${text}</a>`;
       },
