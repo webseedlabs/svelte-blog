@@ -12,8 +12,8 @@ import Avatar_512_PNG from '$assets/avatar.png?w=512&h=512&imagetools';
 import SiteCover from '$assets/qwer.webp';
 
 export const siteConfig: Site.Config = {
-  url: 'https://svelte-qwer.vercel.app',
-  title: 'QWER',
+  url: 'https://webseedlabs.com',
+  title: 'WebSeedLabs',
   subtitle: '🚀 QWER - Built using Svelte with ❤',
   description: '🚀 QWER - Awesome Blog Starter, Built using Svelte with ❤',
   lang: 'en',
@@ -21,26 +21,27 @@ export const siteConfig: Site.Config = {
   since: 2022,
   cover: SiteCover,
   author: {
-    name: 'John Doe',
+    name: 'WebSeed Labs',
     status: '🚀',
     statusTip:
-      '<a href="https://github.com/kwchang0831/svelte-QWER" rel="external" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" >QWER</a> is Awesome !',
+      '<a href="https://github.com/kwchang0831/svelte-QWER" rel="nofollow" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" >QWER</a> is Awesome !',
     avatar: Avatar,
     avatar_128: Avatar_128,
     avatar_48_png: Avatar_48_PNG,
     avatar_96_png: Avatar_96_PNG,
     avatar_192_png: Avatar_192_PNG,
     avatar_512_png: Avatar_512_PNG,
-    website: 'https://github.com/kwchang0831/svelte-QWER',
-    github: 'https://github.com/kwchang0831',
-    email: 'contact@kwchang0831.dev',
+    website: 'https://webseedlabs.com',
+    github: 'https://github.com/webseedlabs',
+    email: 'support@webseedlabs.com',
+    twitter: 'https://twitter.com/webseedlabs',
     bio: `Peace begins <br/> With a smile`,
   },
 };
 
 export const headConfig: Site.Head = {
   // Used for IndieWeb
-  me: ['https://github.com/kwchang0831'],
+  me: ['https://github.com/webseedlabs'],
   custom: ({ dev }) =>
     dev
       ? [
@@ -91,7 +92,7 @@ export const dateConfig: Site.DateConfig = {
 // Replace with your own Giscus setting
 // See https://giscus.app/
 export const giscusConfig: Giscus.Config = {
-  enable: true,
+  enable: false,
   id: 'giscus-comment',
   repo: import.meta.env.QWER_GISCUS_REPO,
   repoId: import.meta.env.QWER_GISCUS_REPO_ID,
@@ -111,16 +112,16 @@ export const navConfig: (DD.Nav | DD.Link)[] = [
     name: 'About',
     url: '/about',
   },
-  {
-    name: 'See Docs 📄',
-    url: 'https://docs-svelte-qwer.vercel.app/',
-    rel: 'external',
-  },
-  {
-    name: 'Get QWER 🚀',
-    url: 'https://github.com/kwchang0831/svelte-QWER',
-    rel: 'external',
-  },
+  // {
+  //   name: 'See Docs 📄',
+  //   url: 'https://docs-svelte-qwer.vercel.app/',
+  //   rel: 'external',
+  // },
+  // {
+  //   name: 'Get QWER 🚀',
+  //   url: 'https://github.com/kwchang0831/svelte-QWER',
+  //   rel: 'external',
+  // },
 ];
 
 export const mobilenavConfig: DD.Nav = {
@@ -130,15 +131,15 @@ export const mobilenavConfig: DD.Nav = {
       name: 'About',
       url: '/about',
     },
-    {
-      name: 'See Docs 📄',
-      url: 'https://docs-svelte-qwer.vercel.app/',
-      rel: 'external',
-    },
-    {
-      name: 'Get QWER 🚀',
-      url: 'https://github.com/kwchang0831/svelte-QWER',
-      rel: 'external',
-    },
+    // {
+    //   name: 'See Docs 📄',
+    //   url: 'https://docs-svelte-qwer.vercel.app/',
+    //   rel: 'external',
+    // },
+    // {
+    //   name: 'Get QWER 🚀',
+    //   url: 'https://github.com/kwchang0831/svelte-QWER',
+    //   rel: 'external',
+    // },
   ],
 };
